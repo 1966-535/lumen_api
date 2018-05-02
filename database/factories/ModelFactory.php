@@ -14,6 +14,8 @@
 $factory->define(App\User::class, function (Faker\Generator $faker) {
     return [
         'name' => $faker->name,
-        'email' => $faker->email,
+        'price' => rand(0, 300),
+        'description'=>$faker->text,
+        // 'email' => $faker->email,
     ];
 });
